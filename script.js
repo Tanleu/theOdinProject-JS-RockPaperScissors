@@ -68,6 +68,15 @@ function playRound(userChoiceImgSrc, userPlay){
 
     updateCurrentResult(userChoiceImgSrc, computerPlay1.img_link);
     updateTotalResult(userScore, computerScore);
+    if (userScore == 3) {
+        alert("The world is saved! You are the god!!!");
+        playAgain();
+    }
+
+    if(computerScore == 3){
+        alert("Oh no!!! The world is dominant by computerrrr!");
+        playAgain();
+    }
 
     if(round == 5){
         if(userScore >= 3) {
@@ -75,6 +84,7 @@ function playRound(userChoiceImgSrc, userPlay){
             playAgain();
         }
         else {
+            alert("Oh noooooo! Is it the end of the world? try one more time??")
             playAgain();
         }
 
@@ -82,7 +92,7 @@ function playRound(userChoiceImgSrc, userPlay){
 }
 
 let playAgain = () => {
-    if(confirm("Oh noooooo! Is it the end of the world? try one more time??")){
+    if(confirm("Wanna play again???")){
         round = 0;
         userScore = 0;
         computerScore = 0;
