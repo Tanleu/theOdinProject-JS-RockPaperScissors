@@ -5,9 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div id="header">
+        <div class="center-screen">
+            <p>Welcome to the battle</p>
+        </div>    
+    </div>
+
+    <div id="body">
+        <div class="center-screen">
+            <p>Your choice will be the thresh hold of the world</p>
+            <p id="round">Round 1</p>
+            <div id="body-three-option" />
+        </div>
+        <div class="body-current-result">
+            <div>
+                <p>Your choice</p>
+                <div id="result-user-choice"></div>
+            </div>
+            <div>
+                <p>Computer choice</p>
+                <div id="result-computer-choice"></div>
+            </div>
+        </div>
+        <p>Total Result Score</p>
+        <div class="body-total-result">
+            <div id="body-total-result-player">
+                <p>Player</p>
+                <p class="score-result-text">0</p>
+            </div>
+            <div id="body-total-result-computer">
+                <p>Computer</p>
+                <p class="score-result-text">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="center-screen">
+            <p>@Copyright of the Odinproject</p>
+            <p>Made by TomProCo with many love</p>
+        </div>
+    </div>
+
 </body>
 </html>
